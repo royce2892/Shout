@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NameViewController">
+            <connections>
+                <outlet property="nameTF" destination="zcG-G1-fHU" id="tZV-6D-svs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please tell us your name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zcG-G1-fHU">
+                    <rect key="frame" x="150" y="120" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="fWs-lx-noq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="iRr-wh-U9J"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJE-Ar-S9g">
+                    <rect key="frame" x="278" y="210" width="45" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="5e8-53-k8c"/>
+                    </constraints>
+                    <state key="normal" title="Shout">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shoutTapped:" destination="-1" eventType="touchUpInside" id="02Y-kk-OGw"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="zcG-G1-fHU" secondAttribute="centerX" id="57J-z5-Fqc"/>
+                <constraint firstAttribute="centerX" secondItem="bJE-Ar-S9g" secondAttribute="centerX" id="BW9-fb-UkR"/>
+                <constraint firstItem="zcG-G1-fHU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="TuE-Fa-Cza"/>
+                <constraint firstItem="bJE-Ar-S9g" firstAttribute="top" secondItem="zcG-G1-fHU" secondAttribute="bottom" constant="60" id="ZWK-Vy-bTg"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

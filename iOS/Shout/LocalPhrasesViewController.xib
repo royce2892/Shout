@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LocalPhrasesViewController">
+            <connections>
+                <outlet property="tableView" destination="4h4-B2-kZL" id="M6z-0y-nIe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4h4-B2-kZL">
+                    <rect key="frame" x="0.0" y="70" width="320" height="450"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="KOr-cz-W4L"/>
+                        <outlet property="delegate" destination="-1" id="lR0-f4-Cy7"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="4h4-B2-kZL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FgU-Lc-0Cp"/>
+                <constraint firstItem="4h4-B2-kZL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="ZAL-Nj-pUR"/>
+                <constraint firstAttribute="trailing" secondItem="4h4-B2-kZL" secondAttribute="trailing" id="rnI-Se-5yO"/>
+                <constraint firstAttribute="bottom" secondItem="4h4-B2-kZL" secondAttribute="bottom" constant="48" id="uHv-AV-X1T"/>
+            </constraints>
+            <point key="canvasLocation" x="293" y="184"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

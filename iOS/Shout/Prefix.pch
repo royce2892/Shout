@@ -1,0 +1,13 @@
+//
+// Prefix header for all source files
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <CoreData/CoreData.h>
+    #import <Parse/Parse.h>
+#import "AppDelegate.h"
+#import "Protocols.h"
+#import "ParseDataHandler.h"
+#endif

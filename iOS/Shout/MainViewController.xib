@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="placeTF" destination="mWU-WG-GGS" id="IXh-tI-b5O"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image" translatesAutoresizingMaskIntoConstraints="NO" id="KWF-Rj-uka">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zV6-cP-qGz" userLabel="Explore Button">
+                    <rect key="frame" x="274" y="174" width="52" height="30"/>
+                    <state key="normal" title="Explore">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="exploreTapped:" destination="-1" eventType="touchUpInside" id="iut-1I-jnh"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Where are you??" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mWU-WG-GGS" userLabel="Place Text Field">
+                    <rect key="frame" x="150" y="130" width="300" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="7uE-mK-cwD"/>
+                        <constraint firstAttribute="height" constant="30" id="WHg-07-bYK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="gF6-S1-Neg"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4k-2X-1js">
+                    <rect key="frame" x="252" y="500" width="97" height="30"/>
+                    <state key="normal" title="Shout for help">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="shoutTapped:" destination="-1" eventType="touchUpInside" id="wk4-5l-MdP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="zV6-cP-qGz" secondAttribute="centerX" id="5yd-4V-Nzh"/>
+                <constraint firstItem="mWU-WG-GGS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="130" id="8cu-qw-ZCK"/>
+                <constraint firstAttribute="bottom" secondItem="q4k-2X-1js" secondAttribute="bottom" constant="70" id="ATa-gU-PLE"/>
+                <constraint firstAttribute="bottom" secondItem="KWF-Rj-uka" secondAttribute="bottom" id="J8t-VN-Ua9"/>
+                <constraint firstItem="KWF-Rj-uka" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vyl-SH-oPR"/>
+                <constraint firstAttribute="centerX" secondItem="mWU-WG-GGS" secondAttribute="centerX" id="amR-4D-VHF"/>
+                <constraint firstAttribute="centerX" secondItem="q4k-2X-1js" secondAttribute="centerX" id="fDh-sO-LHU"/>
+                <constraint firstItem="KWF-Rj-uka" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="seu-0j-zDj"/>
+                <constraint firstAttribute="trailing" secondItem="KWF-Rj-uka" secondAttribute="trailing" id="uPC-G8-j37"/>
+                <constraint firstItem="zV6-cP-qGz" firstAttribute="top" secondItem="mWU-WG-GGS" secondAttribute="bottom" constant="14" id="uwY-F2-1R5"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="image" width="6000" height="4000"/>
+    </resources>
+</document>
