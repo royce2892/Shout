@@ -1,0 +1,12 @@
+{
+  "name": "mygola",
+  "version": "0.0.3",
+  "private": true,
+  "dependencies": {
+    "compression": "^1.4.4",
+    "express": "~4.12.2",
+    "forever": "^0.15.0", 
+    "mongoose": "*",
+    "ortoo-feedparser": "*"
+  }
+}
