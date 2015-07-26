@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_shout_note"
+        android:title="@string/pref_title_shout" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="@string/pref_message_note"
+        android:title="@string/pref_title_message" />
+
+</PreferenceScreen>

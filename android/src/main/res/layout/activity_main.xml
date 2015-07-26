@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_common"/>
+
+    <EditText
+        android:id="@+id/plan_place"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="8dp"
+        android:hint="Enter location here"
+        android:layout_below="@+id/toolbar"
+        android:padding="8dp"
+        android:cursorVisible="true"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/place_explore"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/plan_place"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_bg_green"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Explore"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="16dp"
+        android:gravity="left|center_vertical"
+        android:layout_centerInParent="true"
+        android:text="Shout helps you shout out to people near you when you are in an emergency or lets you learn the common local phrases of the destination you want to visit and read the safety precautions"
+        android:textColor="@color/light_black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/shout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:background="@drawable/rounded_bg_green"
+        android:gravity="center"
+        android:text="Shout for help"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+</RelativeLayout>
